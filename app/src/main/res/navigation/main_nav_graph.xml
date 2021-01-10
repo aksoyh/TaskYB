@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/timelineFragment">
+
+    <fragment
+        android:id="@+id/timelineFragment"
+        android:name="com.aksoyhasan.taskyb.ui.fragments.TimelineFragment"
+        android:label="TimelineFragment"
+        tools:layout="@layout/fragment_timeline">
+    </fragment>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.aksoyhasan.taskyb.ui.fragments.SearchFragment"
+        android:label="SearchFragment"
+        tools:layout="@layout/fragment_search">
+    </fragment>
+    <fragment
+        android:id="@+id/handbackFragment"
+        android:name="com.aksoyhasan.taskyb.ui.fragments.HandbackFragment"
+        android:label="HandbackFragment"
+        tools:layout="@layout/fragment_handback">
+    </fragment>
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="com.aksoyhasan.taskyb.ui.fragments.NotificationFragment"
+        android:label="NotificationFragment"
+        tools:layout="@layout/fragment_notification">
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.aksoyhasan.taskyb.ui.fragments.ProfileFragment"
+        android:label="ProfileFragment"
+        tools:layout="@layout/fragment_profile">
+    </fragment>
+</navigation>

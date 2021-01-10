@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:layout_alignParentBottom="true"
+    android:background="@color/black_60">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_horizontal_image"
+        android:backgroundTint="@color/white"
+        android:layout_above="@id/layout_mentions_btn_close">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/layout_mentions_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/layout_mentions_btn_close"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:layout_alignParentBottom="true"
+        android:text="Close"
+        android:textAllCaps="false"
+        android:background="@drawable/bg_button_white"
+        android:textColor="@color/black"/>
+</RelativeLayout>

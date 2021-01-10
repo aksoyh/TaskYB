@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_hr_layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="216dp"
+    android:layout_marginStart="20dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginEnd="20dp"
+    android:background="@drawable/bg_horizontal_image">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/item_hr_layout_bg_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/item_hr_rl_mentions_area"
+        android:layout_width="107dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_mentions_collapse">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/item_hr_layout_rv_mentions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/item_hr_layout_tv_mentions_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@id/item_hr_layout_rv_mentions"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="15dp"
+            android:letterSpacing="-0.03"
+            android:lineSpacingExtra="10sp"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            tools:text="+2" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="20dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/item_hr_layout_tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:letterSpacing="-0.02"
+            android:lineSpacingExtra="8sp"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="normal"
+            tools:text="Soultheast Asia" />
+
+        <LinearLayout
+            android:id="@+id/item_hr_layout_ll_bottom_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_hr_layout_tv_title"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/item_hr_layout_tv_included_suggestions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:letterSpacing="0.08"
+                android:lineSpacingExtra="8sp"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                tools:text="4 Countries" />
+
+            <View
+                android:layout_width="4dp"
+                android:layout_height="4dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="4dp"
+                android:background="@color/white_20" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/item_hr_layout_tv_published_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:letterSpacing="0.08"
+                android:lineSpacingExtra="8sp"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                tools:text="30 days ago" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="-5dp"
+            android:background="@drawable/bg_mentions_collapse"
+            android:gravity="center|top"
+            android:lineSpacingExtra="-12sp"
+            android:lines="2"
+            android:paddingTop="-10dp"
+            android:text=".\n."
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

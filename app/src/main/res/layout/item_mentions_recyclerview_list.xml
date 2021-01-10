@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="12dp"
+    android:layout_marginBottom="12dp"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/item_mentions_rv_iv"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:background="@drawable/bg_circle_image"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"/>
+    <LinearLayout
+        android:id="@+id/item_mentions_rv_ll_name_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/item_mentions_rv_iv"
+        android:layout_marginStart="8dp"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/item_hr_layout_tv_mentions_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="13sp"
+            android:textColor="@color/cod__gray"
+            android:letterSpacing="-0.01"
+            android:lineSpacingExtra="5sp"
+            tools:text="George Fletcher" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/item_hr_layout_tv_mentions_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textSize="11sp"
+            android:textColor="@color/cod__gray"
+            tools:text="\ufeff@george"
+            tools:ignore="SmallSp" />
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/item_mentions_rv_btn_follow"
+        android:layout_width="79dp"
+        android:layout_height="28dp"
+        android:background="@drawable/bg_button_purple"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:text="Follow"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:lineSpacingExtra="9sp"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:textAlignment="center"
+        android:textColor="@color/white"/>
+</RelativeLayout>
