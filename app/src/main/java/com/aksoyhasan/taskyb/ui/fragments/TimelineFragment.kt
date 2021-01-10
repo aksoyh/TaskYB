@@ -132,8 +132,8 @@ class TimelineFragment: Fragment(R.layout.fragment_timeline) {
         rvTimeline.apply {
             adapter = timelineAdapter
             layoutManager = LinearLayoutManager(activity)
-            //viewModel.getRecordById()
-            addOnScrollListener(this@TimelineFragment.scrollListener)
+            viewModel.getRecordById()
+            //addOnScrollListener(this@TimelineFragment.scrollListener)
         }
 
         viewModel.getAllCitiesWithInfoRes.observe(viewLifecycleOwner, { response ->
